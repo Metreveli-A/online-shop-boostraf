@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        .mybtn::after{
+            content: attr(count);
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+            font-size: 12px;
+            bottom: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  sticky-top w-100 bg-light ">
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-dark" href="#">AMAZON</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collaps" data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" aria-current="page" href="#">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="d-flex mt-2 mt-lg-0">
+                    <button  count="2" class="btn btn-warning d-block ms-0 ms-lg-2 position-relative mybtn"
+                    data-bs-toggle="modal" data-bs-target="#examplModal">
+                    <i class="bi bi-cart4"></i>
+                </button>
+                <ul class="list-inline mb-0 ms-4">
+                    <li class="list-inline-item">
+                        <button class="btn btn-secondary">GE</button>
+                    </li>
+                    <li class="list-inline-item">
+                        <button class="btn btn-secondary">EN</button>
+                    </li>
+                </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container-fluid">
+            <div class="row mt-3">
+                <div class="col-12 mb-2 mb-lg-0 col-lg-3">
+                    <div class="w-100 border border-success-subtle rounded shadow p-2">
+                        <h4 class="text-center"> Category</h4>
+                        <ul class="list-unstyled d-flex flex-wrap justify-content-around d-lg-block">
+                            <li class="my-2 d-grid">
+                                <a class="btn  btn-outline-info text-decoration-none text-dark" href="">category</a>
+                            </li>
+                            <li class="my-2 d-grid">
+                                <a class="btn  btn-outline-info text-decoration-none text-dark" href="">category</a>
+                            </li>
+                            <li class="my-2 d-grid">
+                                <a class="btn  btn-outline-info text-decoration-none text-dark" href="">category</a>
+                            </li>
+                            <li class="my-2 d-grid">
+                                <a class="btn  btn-outline-info text-decoration-none text-dark" href="">category</a>
+                            </li>
+                            <li class="my-2 d-grid">
+                                <a class="btn  btn-outline-info text-decoration-none text-dark" href="">category</a>
+                            </li>
+                            <li class="my-2 d-grid">
+                                <a class="btn  btn-outline-info text-decoration-none text-dark" href="">category</a>
+                            </li>
+                            <li class="my-2 d-grid">
+                                <a class="btn  btn-outline-info text-decoration-none text-dark" href="">category</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mb-2">
+                            <div class="card">
+                                <img src="./assets/images/d-1 (1).jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-2">
+                            <div class="card">
+                                <img src="./assets/images/d-1 (2).jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-2">
+                            <div class="card">
+                                <img src="./assets/images/d-1 (3).jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-2">
+                            <div class="card">
+                                <img src="./assets/images/d-1 (1).jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-2">
+                            <div class="card">
+                                <img src="./assets/images/d-1 (2).jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-2">
+                            <div class="card">
+                                <img src="./assets/images/d-1 (11).jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-2">
+                            <div class="card">
+                                <img src="./assets/images/d-1 (3).jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-2">
+                            <div class="card">
+                                <img src="./assets/images/d-1 (11).jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-2">
+                            <div class="card">
+                                <img src="./assets/images/d-1 (13).jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-light">
+         <div class="container p-5">
+            <div class="row justify-content center align-items-center">
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="text-decoratiob-none text-light" href="">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-decoratiob-none text-light" href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="email" placeholder="email">
+                        <button class="btn btn-outline-warning" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="bi bi-geo-alt-fill">
+                                Jano Bagration 6
+                            </i>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill">
+                                ugcollege@ugcollege.ge
+                            </i>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone-fill">
+                                777 77 11 77
+                            </i>
+                        </li>
+                    </ul>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a class="text-decoration-none text-light" href="" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+    </footer>
+    <!-- modal -->
+    <div class="modal fade" id="examplModal" tabindex="-1" aria-labelledby="examplModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="examplModalLabel">Modal Title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
